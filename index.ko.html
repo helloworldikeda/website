@@ -13,6 +13,46 @@
     <meta name="description" content="오사카 이케다시의 영어 & 프로그래밍 교실. 원어민 강사의 소수정예 레슨. 이케다역 도보 4분. 온라인 수업 가능. 무료 체험 예약 중!">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Hello World Ikeda",
+          "url": "https://helloworldikeda.com/index.ko.html",
+          "logo": "https://helloworldikeda.com/logo.svg",
+          "description": "오사카 이케다시의 영어 & 프로그래밍 교실. 원어민 강사의 소수정예 레슨.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "이케다시",
+            "addressRegion": "오사카부",
+            "addressCountry": "JP"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "영어 코스",
+          "description": "원어민 강사와 함께 즐겁게 배우는 회화 중심 수업. 100% 원어민 강사로 실제 발음 지도.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Hello World Ikeda",
+            "sameAs": "https://helloworldikeda.com/index.ko.html"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "프로그래밍 코스",
+          "description": "Scratch와 Python을 활용한 게임/앱 제작 등 단계별 학습으로 창의력과 논리적 사고를 기릅니다.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Hello World Ikeda",
+            "sameAs": "https://helloworldikeda.com/index.ko.html"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-blue-50 overflow-x-hidden">

@@ -14,6 +14,46 @@
         content="English & Programming School in Ikeda, Osaka. Small group lessons with native teachers. 4-min walk from Ikeda Station. Online lessons available. Free trial booking now!">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Hello World Ikeda",
+          "url": "https://helloworldikeda.com/index.en.html",
+          "logo": "https://helloworldikeda.com/logo.svg",
+          "description": "English & Programming School in Ikeda, Osaka. Small group lessons with native teachers.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ikeda City",
+            "addressRegion": "Osaka",
+            "addressCountry": "JP"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "English Course",
+          "description": "Learn with native teachers in a fun, communicative environment. Small group lessons available online and in-person.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Hello World Ikeda",
+            "sameAs": "https://helloworldikeda.com/index.en.html"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Programming Course",
+          "description": "Develop creativity and logical thinking through project-based learning with Scratch and Python.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Hello World Ikeda",
+            "sameAs": "https://helloworldikeda.com/index.en.html"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-blue-50 overflow-x-hidden">
