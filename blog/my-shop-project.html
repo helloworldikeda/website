@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独自の「マイショップ」を作ろう！実践的なプロジェクト学習 | Hello World</title>
+    <!-- Tailwind CSS with Typography plugin for beautifully formatted text -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <meta name="description" content="Hello Worldのクラスで大人気の「マイショップ（My Shop）」プロジェクト。アイスクリーム屋さんなど、自分の好きなお店をデザインしながら、プログラミング、ビジネス、アートを実践的に学びます。">
+    
+    <!-- IMPORTANT: Schema Markup for Blog Posts -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://helloworldikeda.com/blog/my-shop-project.html"
+      },
+      "headline": "独自の「マイショップ」を作ろう！実践的なプロジェクト学習",
+      "description": "Hello Worldのクラスで大人気の「マイショップ（My Shop）」プロジェクト。アイスクリーム屋さんなど、自分の好きなお店をデザインしながら、ビジネスやデザインを実践的に学びます。",
+      "image": "https://helloworldikeda.com/blog/images/icecreamshop7-23-2023.webp",  
+      "author": {
+        "@type": "Person",
+        "name": "Kevin先生"
+      },  
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hello World",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloworldikeda.com/logo.svg"
+        }
+      },
+      "datePublished": "2023-07-23"
+    }
+    </script>
+</head>
+
+<body class="bg-white overflow-x-hidden min-h-screen border-t-4" style="border-color: #ef0d50;">
+    
+    <!-- Minimal Header for Reading Experience -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Back to Blog Hub -->
+                <a href="index.html" class="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition font-semibold text-sm">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> ブログ一覧へ戻る
+                </a>
+                <a href="../index.html"><img src="../logo.svg" alt="Hello World" class="h-6 md:h-7 opacity-80 hover:opacity-100 transition"></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-12 md:py-20">
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Article Header -->
+            <header class="mb-10 text-center">
+                <!-- Tag Name -->
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-bold mb-6">
+                    プロジェクト学習
+                </div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
+                    独自の「マイショップ」を作ろう！実践的なプロジェクト学習
+                </h1>
+                
+                <div class="flex items-center justify-center gap-6 mt-8 border-y border-gray-100 py-4">
+                    <div class="flex items-center gap-3">
+                        <!-- Update Author Image Src here -->
+                        <img src="../teacher_kevin.jpg" alt="Author" class="w-10 h-10 rounded-full object-cover shadow-sm">
+                        <div class="text-left flex flex-col">
+                            <span class="text-sm font-bold text-gray-900">Kevin先生</span>
+                            <span class="text-xs text-gray-500">Instructor / Writer</span>
+                        </div>
+                    </div>
+                    <div class="w-px h-8 bg-gray-200"></div>
+                    <div class="flex items-center gap-2 text-gray-500">
+                        <i data-lucide="calendar" class="w-5 h-5"></i>
+                        <span class="text-sm font-medium">2023年7月23日</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Featured Image -->
+            <div class="mb-12 rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50">
+                <img src="images/icecreamshop7-23-2023.webp" alt="Ice Cream Shop Project" class="w-full h-auto object-cover">
+            </div>
+
+            <!-- Article Content (styled heavily by Tailwind Typography plugin 'prose') -->
+            <div class="prose prose-lg md:prose-xl prose-blue max-w-none prose-headings:font-bold prose-a:text-red-500">
+                <p>Hello Worldのケビンです！私たちのクラスで、生徒たちに大人気のプロジェクトがあります。<br>それが<strong>「My Shop（マイショップ）プロジェクト」</strong>です。</p>
+                
+                <h2>1. 好きなお店をデザインしよう！</h2>
+                <p>この記事にある画像は「アイスクリーム屋さん（Ice Cream Shop）」をテーマに設定したものですが、このプロジェクトの素晴らしいところは、<strong>生徒一人ひとりが自分の興味に合わせて「どんなお店を作るか」を自由に決められる</strong>点です。お花屋さん、ゲームショップ、ペットショップなど、子どもたちの想像力は無限大に広がります。</p>
+                
+                <h2>2. まるでデザインスタジオのような教室</h2>
+                <p>プロジェクト期間中、私たちの教室はまさに「デザインスタジオ」へと変わります！<br>生徒たちは受け身で授業を聞くのではなく、自ら学習の主導権を握り（自主設計）、仲間たちとアイデアを共有しながら、活気ある環境で作業を進めていきます。</p>
+
+                <ul>
+                    <li><strong>インテリアデザインとアート：</strong> お店の外観や店内のレイアウト、看板のデザインまで、クリエイティブな感覚をフル活用します。</li>
+                    <li><strong>商品マーケティング（プロダクトマーケティング）：</strong> どんな商品をいくらで売るか？どうすればお客さんが喜んでくれるか？というビジネスや起業家精神（アントレプレナーシップ）の基本も学びます。</li>
+                </ul>
+
+                <blockquote>
+                    <p>「このプロジェクトの中で、生徒たちは単なる消費者ではなく、アイデアを生み出す『クリエイター』や『経営者』としての視点を身につけます。」</p>
+                </blockquote>
+
+                <h2>3. プログラミングや数学、そして社会性を統合的に学ぶ</h2>
+                <p>一見するとアートやデザインのプロジェクトに見えますが、お店を動かすためには他のスキルも必要です。</p>
+                <ul>
+                    <li>商品の値段をお客さんの所持金から引いたり、お金が足りるかを確認したり、お会計の合計金額を計算するために<strong>算数・数学</strong>のスキルが使われます。</li>
+                    <li>お店のシステムを作ったり、レジの動きを自動化するために<strong>プログラミング</strong>の論理的思考力が活かされます。</li>
+                    <li>お店でのやりとり（接客）を通じて、リアルな<strong>社会的なコミュニケーション（ソーシャルインタラクション）</strong>を実践的に学びます。もちろんこれも英語で行います！</li>
+                </ul>
+
+                <hr>
+
+                <h3>まとめ</h3>
+                <p>「My Shopプロジェクト」は、多角的なスキル（プログラミング、数学、アート、ビジネス、コミュニケーション）を統合して学ぶ、究極の体験型学習です。デザインスタジオのような空間で、子どもたちが目を輝かせながら自分のアイデアを形にしていく姿は、私たち講師にとっても非常にやりがいのある瞬間です。<br><br>Hello Worldでは、こうした実践的なプロジェクトを通じて、子どもたちの「クリエイティブシンキング」と「未来を生き抜く力」を楽しく育てています！</p>
+            </div>
+
+            <!-- Call to Action Footer -->
+            <div class="mt-16 bg-blue-50 rounded-2xl p-8 border border-blue-100 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">英語とプログラミングを一緒に学ぼう</h4>
+                    <p class="text-gray-600 mb-0">Hello Worldでは、随時無料体験レッスンを受け付けています。</p>
+                </div>
+                <a href="../index.html#contact" class="flex-shrink-0 text-white px-8 py-4 rounded-full font-bold shadow-md hover:opacity-90 transition transform hover:-translate-y-1" style="background-color: #ef0d50;">
+                    無料体験を予約する
+                </a>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+            <div class="flex flex-col items-center gap-4 text-center">
+                <img src="../logo.svg" alt="Hello World" class="h-8 brightness-0 invert opacity-50">
+                <p class="text-sm text-gray-400">&copy; <span id="year"></span> Hello World - 大阪府池田市の英語&プログラミング教室</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
