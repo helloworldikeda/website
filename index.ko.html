@@ -198,7 +198,7 @@
                             <i data-lucide="target" class="w-12 h-12 text-red-500 mx-auto mb-4"></i>
                             <h3 class="text-2xl font-bold mb-4">지금 바로 체험 예약</h3>
                             <div class="space-y-3 text-left">
-                                <div class="flex items-center gap-2">
+                                <div id="campaign-checklist-item" class="flex items-center gap-2">
                                     <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
                                     <span>입회비·교재비 0엔</span>
                                 </div>
@@ -980,6 +980,25 @@
     </a>
 
     <script>
+        // ============================================================
+        // CAMPAIGN TOGGLE — set to false to hide all campaign elements
+        // ============================================================
+        const CAMPAIGN_ACTIVE = false;
+        // ============================================================
+
+        if (!CAMPAIGN_ACTIVE) {
+            [
+                'campaign-hero-badge',
+                'campaign-checklist-item',
+                'campaign-pricing-discount',
+                'campaign-pricing-label',
+                'campaign-banner'
+            ].forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+            }
+
         lucide.createIcons();
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>

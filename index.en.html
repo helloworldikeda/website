@@ -158,7 +158,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="bg-yellow-400 inline-block px-4 py-2 rounded-full font-bold text-sm mb-4 flex items-center gap-2"
+                    <div id="campaign-hero-badge" class="bg-yellow-400 inline-block px-4 py-2 rounded-full font-bold text-sm mb-4 flex items-center gap-2"
                         style="color: #000;">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i> Limited Time! No Enrollment Fee
                     </div>
@@ -201,7 +201,7 @@
                             <i data-lucide="target" class="w-12 h-12 text-red-500 mx-auto mb-4"></i>
                             <h3 class="text-2xl font-bold mb-4">Book Trial Now</h3>
                             <div class="space-y-3 text-left">
-                                <div class="flex items-center gap-2"><span
+                                <div id="campaign-checklist-item" class="flex items-center gap-2"><span
                                         class="text-green-500 text-xl">✓</span><span>No enrollment or material
                                         fees</span></div>
                                 <div class="flex items-center gap-2"><span
@@ -673,8 +673,8 @@
                 <div class="grid md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
                     <div class="p-2">
                         <div class="text-sm text-gray-500 mb-1">Entrance Fee</div>
-                        <div class="font-bold text-gray-900">¥10,000 → <span style="color: #ef0d50;">Free</span></div>
-                        <div class="text-xs text-gray-400 mt-1">This Month Only</div>
+                        <div class="font-bold text-gray-900">¥10,000<span id="campaign-pricing-discount"> → <span style="color: #ef0d50;">Free</span></span></div>
+                        <div id="campaign-pricing-label" class="text-xs text-gray-400 mt-1">This Month Only</div>
                     </div>
                     <div class="p-2">
                         <div class="text-sm text-gray-500 mb-1">Materials Fee</div>
@@ -958,7 +958,7 @@
                 </a>
             </div>
 
-            <div class="bg-yellow-400 inline-block p-6 rounded-2xl">
+            <div id="campaign-banner" class="bg-yellow-400 inline-block p-6 rounded-2xl">
                 <div class="font-black text-2xl mb-2 flex items-center justify-center gap-2" style="color: #000;">
                     <i data-lucide="gift" class="w-8 h-8 text-red-500"></i> Limited Time Campaign
                 </div>
@@ -1000,6 +1000,25 @@
     </footer>
 
     <script>
+        // ============================================================
+        // CAMPAIGN TOGGLE — set to false to hide all campaign elements
+        // ============================================================
+        const CAMPAIGN_ACTIVE = false;
+        // ============================================================
+
+        if (!CAMPAIGN_ACTIVE) {
+            [
+                'campaign-hero-badge',
+                'campaign-checklist-item',
+                'campaign-pricing-discount',
+                'campaign-pricing-label',
+                'campaign-banner'
+            ].forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+        }
+
         lucide.createIcons();
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>

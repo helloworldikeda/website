@@ -101,13 +101,15 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contact" class="hidden sm:inline-block text-white px-4 md:px-6 py-2 rounded-full font-bold text-sm md:text-base whitespace-nowrap hover:opacity-90 transition lg:block"
+                    <a href="#contact"
+                        class="hidden sm:inline-block text-white px-4 md:px-6 py-2 rounded-full font-bold text-sm md:text-base whitespace-nowrap hover:opacity-90 transition lg:block"
                         style="background-color: #ef0d50;">
                         <span class="inline-block">無料体験予約</span>
                     </a>
-                    
+
                     <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
+                    <button id="mobileMenuBtn"
+                        class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -117,14 +119,22 @@
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full">
             <div class="px-4 py-4 space-y-2 bg-white">
-                <a href="#courses" class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">コース</a>
-                <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">料金</a>
-                <a href="#teachers" class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">講師紹介</a>
-                <a href="#access" class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">アクセス</a>
-                <a href="blog/index.html" class="block px-3 py-2 rounded-md text-base font-bold flex items-center gap-1 hover:bg-gray-50" style="color: #ef0d50;">
+                <a href="#courses"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">コース</a>
+                <a href="#pricing"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">料金</a>
+                <a href="#teachers"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">講師紹介</a>
+                <a href="#access"
+                    class="block px-3 py-2 rounded-md text-base font-bold text-gray-700 hover:text-gray-900 hover:bg-gray-50">アクセス</a>
+                <a href="blog/index.html"
+                    class="block px-3 py-2 rounded-md text-base font-bold flex items-center gap-1 hover:bg-gray-50"
+                    style="color: #ef0d50;">
                     ブログ <i data-lucide="external-link" class="w-4 h-4"></i>
                 </a>
-                <a href="#contact" class="block mt-4 w-full text-center text-white px-4 py-3 rounded-full font-bold text-md sm:hidden shadow-md" style="background-color: #ef0d50;">
+                <a href="#contact"
+                    class="block mt-4 w-full text-center text-white px-4 py-3 rounded-full font-bold text-md sm:hidden shadow-md"
+                    style="background-color: #ef0d50;">
                     無料体験予約
                 </a>
             </div>
@@ -135,7 +145,7 @@
             const langDropdown = document.getElementById('langDropdown');
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
-            
+
             if (langBtn) {
                 langBtn.addEventListener('click', () => {
                     langDropdown.classList.toggle('hidden');
@@ -159,7 +169,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="bg-yellow-400 inline-block px-4 py-2 rounded-full font-bold text-sm mb-4 flex items-center gap-2"
+                    <div id="campaign-hero-badge"
+                        class="bg-yellow-400 inline-block px-4 py-2 rounded-full font-bold text-sm mb-4 flex items-center gap-2"
                         style="color: #000;">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i> 今月限定！入会金0円キャンペーン
                     </div>
@@ -206,7 +217,7 @@
                             <i data-lucide="target" class="w-12 h-12 text-red-500 mx-auto mb-4"></i>
                             <h3 class="text-2xl font-bold mb-4">今すぐ体験予約</h3>
                             <div class="space-y-3 text-left">
-                                <div class="flex items-center gap-2">
+                                <div id="campaign-checklist-item" class="flex items-center gap-2">
                                     <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
                                     <span>入会金・教材費0円</span>
                                 </div>
@@ -262,7 +273,8 @@
     <section id="courses" class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black mb-4" style="color: #000;">選べる2つの<span class="inline-block">コース</span></h2>
+                <h2 class="text-4xl font-black mb-4" style="color: #000;">選べる2つの<span class="inline-block">コース</span>
+                </h2>
                 <p class="text-xl text-gray-600">お子様の興味と目標に合わせて</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
@@ -310,7 +322,8 @@
                 <div class="feature-card bg-white rounded-3xl shadow-lg overflow-hidden">
                     <div class="text-white p-8" style="background: linear-gradient(135deg, #eb3a70 0%, #ef0d50 100%);">
                         <i data-lucide="laptop" class="w-12 h-12 mb-4"></i>
-                        <h3 class="text-3xl font-bold mb-2"><span class="inline-block">プログラミング</span><span class="inline-block">コース</span></h3>
+                        <h3 class="text-3xl font-bold mb-2"><span class="inline-block">プログラミング</span><span
+                                class="inline-block">コース</span></h3>
                         <p style="color: #e5bace;">創造力と論理的思考を育む</p>
                     </div>
                     <img src="student3.webp?v=2" alt="プログラミングレッスンの様子" class="w-full h-80 object-cover object-top">
@@ -353,7 +366,8 @@
     <section class="py-20 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-gray-900 mb-4"><span class="inline-block">プログラミング</span>学習ロードマップ</h2>
+                <h2 class="text-4xl font-black text-gray-900 mb-4"><span class="inline-block">プログラミング</span>学習ロードマップ
+                </h2>
                 <p class="text-xl text-gray-600">お子様の成長に合わせた段階的なカリキュラム</p>
             </div>
 
@@ -361,94 +375,94 @@
                 <div class="overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
                     <div class="relative min-w-[600px] md:min-w-0">
                         <!-- Age Labels -->
-                    <div
-                        class="grid grid-cols-6 gap-1 mb-4 text-center text-gray-500 font-bold text-sm md:text-base border-b-2 border-gray-100 pb-2">
-                        <div>7歳</div>
-                        <div>8歳</div>
-                        <div>9歳</div>
-                        <div>10歳</div>
-                        <div>11歳</div>
-                        <div>12歳〜</div>
-                    </div>
-
-                    <!-- Grid Lines Background -->
-                    <div class="absolute inset-0 grid grid-cols-6 gap-1 h-full pointer-events-none z-0">
-                        <div class="border-r border-gray-100 h-full"></div>
-                        <div class="border-r border-gray-100 h-full"></div>
-                        <div class="border-r border-gray-100 h-full"></div>
-                        <div class="border-r border-gray-100 h-full"></div>
-                        <div class="border-r border-gray-100 h-full"></div>
-                        <div></div>
-                    </div>
-
-                    <!-- Tracks -->
-                    <div class="space-y-6 relative z-10 py-4">
-                        <!-- Scratch Track -->
-                        <div class="relative">
-                            <div class="flex items-center mb-2">
-                                <i data-lucide="cat" class="w-6 h-6 mr-2 text-orange-500"></i>
-                                <span class="font-bold text-gray-700">Scratch (ビジュアル言語)</span>
-                            </div>
-                            <div class="grid grid-cols-6 gap-1 h-14">
-                                <!-- Level 1 -->
-                                <div class="bg-orange-300 rounded-l-xl flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
-                                    title="Scratch入門">
-                                    <div class="text-center leading-tight">
-                                        <div>Level 1</div>
-                                        <div class="text-[10px]">入門</div>
-                                    </div>
-                                </div>
-                                <!-- Level 2 -->
-                                <div class="bg-orange-400 flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
-                                    title="もっとScratch">
-                                    <div class="text-center leading-tight">
-                                        <div>Level 2</div>
-                                        <div class="text-[10px]">初級</div>
-                                    </div>
-                                </div>
-                                <!-- Level 3 -->
-                                <div class="bg-orange-500 rounded-r-xl flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
-                                    title="上級Scratch">
-                                    <div class="text-center leading-tight">
-                                        <div>Level 3</div>
-                                        <div class="text-[10px]">上級</div>
-                                    </div>
-                                </div>
-                                <!-- Empty space for older ages -->
-                                <div class="col-span-3"></div>
-                            </div>
+                        <div
+                            class="grid grid-cols-6 gap-1 mb-4 text-center text-gray-500 font-bold text-sm md:text-base border-b-2 border-gray-100 pb-2">
+                            <div>7歳</div>
+                            <div>8歳</div>
+                            <div>9歳</div>
+                            <div>10歳</div>
+                            <div>11歳</div>
+                            <div>12歳〜</div>
                         </div>
 
-                        <!-- Python Track -->
-                        <div class="relative">
-                            <div class="flex items-center mb-2">
-                                <i data-lucide="file-code-2" class="w-6 h-6 mr-2 text-blue-600"></i>
-                                <span class="font-bold text-gray-700">Python (テキスト言語)</span>
+                        <!-- Grid Lines Background -->
+                        <div class="absolute inset-0 grid grid-cols-6 gap-1 h-full pointer-events-none z-0">
+                            <div class="border-r border-gray-100 h-full"></div>
+                            <div class="border-r border-gray-100 h-full"></div>
+                            <div class="border-r border-gray-100 h-full"></div>
+                            <div class="border-r border-gray-100 h-full"></div>
+                            <div class="border-r border-gray-100 h-full"></div>
+                            <div></div>
+                        </div>
+
+                        <!-- Tracks -->
+                        <div class="space-y-6 relative z-10 py-4">
+                            <!-- Scratch Track -->
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="cat" class="w-6 h-6 mr-2 text-orange-500"></i>
+                                    <span class="font-bold text-gray-700">Scratch (ビジュアル言語)</span>
+                                </div>
+                                <div class="grid grid-cols-6 gap-1 h-14">
+                                    <!-- Level 1 -->
+                                    <div class="bg-orange-300 rounded-l-xl flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
+                                        title="Scratch入門">
+                                        <div class="text-center leading-tight">
+                                            <div>Level 1</div>
+                                            <div class="text-[10px]">入門</div>
+                                        </div>
+                                    </div>
+                                    <!-- Level 2 -->
+                                    <div class="bg-orange-400 flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
+                                        title="もっとScratch">
+                                        <div class="text-center leading-tight">
+                                            <div>Level 2</div>
+                                            <div class="text-[10px]">初級</div>
+                                        </div>
+                                    </div>
+                                    <!-- Level 3 -->
+                                    <div class="bg-orange-500 rounded-r-xl flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md hover:scale-105 transition transform cursor-pointer"
+                                        title="上級Scratch">
+                                        <div class="text-center leading-tight">
+                                            <div>Level 3</div>
+                                            <div class="text-[10px]">上級</div>
+                                        </div>
+                                    </div>
+                                    <!-- Empty space for older ages -->
+                                    <div class="col-span-3"></div>
+                                </div>
                             </div>
-                            <div class="grid grid-cols-6 gap-1 h-14">
-                                <!-- Empty space for younger ages -->
-                                <div class="col-span-3"></div>
-                                <!-- Python Course -->
-                                <div class="col-span-3 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-sm md:text-lg shadow-md hover:scale-105 transition transform cursor-pointer"
-                                    style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);">
-                                    <div class="flex items-center gap-2">
-                                        <span>ゲーム開発コース</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">本格派</span>
+
+                            <!-- Python Track -->
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="file-code-2" class="w-6 h-6 mr-2 text-blue-600"></i>
+                                    <span class="font-bold text-gray-700">Python (テキスト言語)</span>
+                                </div>
+                                <div class="grid grid-cols-6 gap-1 h-14">
+                                    <!-- Empty space for younger ages -->
+                                    <div class="col-span-3"></div>
+                                    <!-- Python Course -->
+                                    <div class="col-span-3 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-sm md:text-lg shadow-md hover:scale-105 transition transform cursor-pointer"
+                                        style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);">
+                                        <div class="flex items-center gap-2">
+                                            <span>ゲーム開発コース</span>
+                                            <span class="text-xs bg-white/20 px-2 py-1 rounded-full">本格派</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="mt-8 text-center">
-                    <a href="#scratch-levels" class="text-blue-500 hover:text-blue-700 font-semibold underline">
-                        Scratchコースの各レベル詳細はこちら &rarr;
-                    </a>
                 </div>
             </div>
+
+            <div class="mt-8 text-center">
+                <a href="#scratch-levels" class="text-blue-500 hover:text-blue-700 font-semibold underline">
+                    Scratchコースの各レベル詳細はこちら &rarr;
+                </a>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -495,7 +509,8 @@
     <section class="py-20" style="background-color: #f0f0f0;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-gray-900 mb-4">hello worldが<span class="inline-block">選ばれる</span>理由</h2>
+                <h2 class="text-4xl font-black text-gray-900 mb-4">hello worldが<span class="inline-block">選ばれる</span>理由
+                </h2>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-md">
@@ -554,7 +569,8 @@
                         <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
                         <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
                     </div>
-                    <p class="text-gray-700 mb-4">「<span class="inline-block">プログラミング</span>で自分のゲームを作れるようになり、自信がついたようです。」</p>
+                    <p class="text-gray-700 mb-4">「<span
+                            class="inline-block">プログラミング</span>で自分のゲームを作れるようになり、自信がついたようです。」</p>
                     <div class="font-bold text-gray-900">中学1年生の保護者様</div>
                 </div>
             </div>
@@ -587,7 +603,8 @@
                             </li>
                             <li class="flex items-start">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>
-                                <span class="text-gray-600"><strong><span class="inline-block">プログラミング</span></strong> (Scratch/Python)</span>
+                                <span class="text-gray-600"><strong><span class="inline-block">プログラミング</span></strong>
+                                    (Scratch/Python)</span>
                             </li>
                             <li class="flex items-start border-t pt-4 mt-4">
                                 <i data-lucide="info" class="w-5 h-5 text-blue-500 mr-2"></i>
@@ -686,8 +703,9 @@
                 <div class="grid md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
                     <div class="p-2">
                         <div class="text-sm text-gray-500 mb-1">入会金</div>
-                        <div class="font-bold text-gray-900">¥10,000 → <span style="color: #ef0d50;">無料</span></div>
-                        <div class="text-xs text-gray-400 mt-1">今月限定キャンペーン</div>
+                        <div class="font-bold text-gray-900">¥10,000<span id="campaign-pricing-discount"> → <span
+                                    style="color: #ef0d50;">無料</span></span></div>
+                        <div id="campaign-pricing-label" class="text-xs text-gray-400 mt-1">今月限定キャンペーン</div>
                     </div>
                     <div class="p-2">
                         <div class="text-sm text-gray-500 mb-1">教材費</div>
@@ -722,7 +740,8 @@
                     </div>
                     <h3 class="text-xl font-bold mb-2">Kevin先生</h3>
                     <div class="text-purple-600 font-semibold mb-2">ネイティブ講師</div>
-                    <p class="text-gray-600 text-sm">指導歴18年。ScratchやPython<span class="inline-block">プログラミング</span>も指導できます。</p>
+                    <p class="text-gray-600 text-sm">指導歴18年。ScratchやPython<span
+                            class="inline-block">プログラミング</span>も指導できます。</p>
                 </div>
                 <div class="text-center">
                     <div class="relative inline-block mb-4">
@@ -732,7 +751,8 @@
                     </div>
                     <h3 class="text-xl font-bold mb-2">Myra先生</h3>
                     <div class="text-purple-600 font-semibold mb-2">ネイティブ講師</div>
-                    <p class="text-gray-600 text-sm">コンピュータサイエンス専攻。ScratchやPythonで子供たちに<span class="inline-block">プログラミング</span>を教えるのが大好きです。</p>
+                    <p class="text-gray-600 text-sm">コンピュータサイエンス専攻。ScratchやPythonで子供たちに<span
+                            class="inline-block">プログラミング</span>を教えるのが大好きです。</p>
                 </div>
                 <div class="text-center">
                     <div class="relative inline-block mb-4">
@@ -742,7 +762,8 @@
                     </div>
                     <h3 class="text-xl font-bold mb-2">Tina先生</h3>
                     <div class="text-purple-600 font-semibold mb-2">ネイティブ講師</div>
-                    <p class="text-gray-600 text-sm">英語と<span class="inline-block">プログラミング</span>の両方を指導できます。子供たちに教えることに情熱を持っています。</p>
+                    <p class="text-gray-600 text-sm">英語と<span
+                            class="inline-block">プログラミング</span>の両方を指導できます。子供たちに教えることに情熱を持っています。</p>
                 </div>
 
             </div>
@@ -821,7 +842,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-gray-900 mb-4">生徒作品ショーケース</h2>
-                <p class="text-xl text-gray-600"><span class="inline-block">プログラミング</span><span class="inline-block">コース</span>の受講生が作成した Scratch プロジェクト</p>
+                <p class="text-xl text-gray-600"><span class="inline-block">プログラミング</span><span
+                        class="inline-block">コース</span>の受講生が作成した Scratch プロジェクト</p>
                 <p class="text-sm text-gray-500 mt-2">作品を実行するには、埋め込み内の緑の旗（<i data-lucide="flag"
                         class="w-4 h-4 text-green-500 fill-current inline-block"></i> Green Flag）をクリックしてください。</p>
             </div>
@@ -848,7 +870,7 @@
                     </h3>
                     <div class="bg-white rounded-lg overflow-hidden flex items-center justify-center"
                         style="height: 420px;">
-                        <iframe src="https://scratch.mit.edu/projects/998988504/embed" allowtransparency="true"
+                        <iframe src="https://scratch.mit.edu/projects/900428121/embed" allowtransparency="true"
                             width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen
                             style="max-width: 485px; max-height: 402px;"></iframe>
                     </div>
@@ -915,7 +937,8 @@
                     <p class="mt-4 text-gray-600">はい、前日までにご連絡いただければ、月2回まで振替可能です。</p>
                 </details>
                 <details class="bg-gray-50 p-6 rounded-xl">
-                    <summary class="font-bold text-lg cursor-pointer"><span class="inline-block">プログラミング</span>は何歳から始められますか？</summary>
+                    <summary class="font-bold text-lg cursor-pointer"><span
+                            class="inline-block">プログラミング</span>は何歳から始められますか？</summary>
                     <p class="mt-4 text-gray-600">小学1年生から受講可能です。マウス操作ができれば大丈夫です。</p>
                 </details>
                 <details class="bg-gray-50 p-6 rounded-xl">
@@ -923,9 +946,11 @@
                     <p class="mt-4 text-gray-600">教室のパソコンを少額のレンタル料でご利用いただけます。オンラインの場合はご準備をお願いします。</p>
                 </details>
                 <details class="bg-gray-50 p-6 rounded-xl">
-                    <summary class="font-bold text-lg cursor-pointer">AI時代でも、子供が<span class="inline-block">プログラミング</span>を学ぶ必要はありますか？</summary>
+                    <summary class="font-bold text-lg cursor-pointer">AI時代でも、子供が<span
+                            class="inline-block">プログラミング</span>を学ぶ必要はありますか？</summary>
                     <p class="mt-4 text-gray-600">
-                        はい、あります。AIは強力なツールですが、それを使いこなすには人間の「論理的思考」や「創造性」が必要です。<span class="inline-block">プログラミング</span>学習を通じて、AIと共存し、新しい価値を生み出すための基礎力を養います。
+                        はい、あります。AIは強力なツールですが、それを使いこなすには人間の「論理的思考」や「創造性」が必要です。<span
+                            class="inline-block">プログラミング</span>学習を通じて、AIと共存し、新しい価値を生み出すための基礎力を養います。
                     </p>
                 </details>
             </div>
@@ -963,7 +988,7 @@
                 </a>
             </div>
 
-            <div class="bg-yellow-400 inline-block p-6 rounded-2xl">
+            <div id="campaign-banner" class="bg-yellow-400 inline-block p-6 rounded-2xl">
                 <div class="font-black text-2xl mb-2 flex items-center justify-center gap-2" style="color: #000;">
                     <i data-lucide="gift" class="w-8 h-8 text-red-500"></i> 今月限定キャンペーン
                 </div>
@@ -1020,6 +1045,25 @@
         </button>
     </a>
     <script>
+        // ============================================================
+        // CAMPAIGN TOGGLE — set to false to hide all campaign elements
+        // ============================================================
+        const CAMPAIGN_ACTIVE = false;
+        // ============================================================
+
+        if (!CAMPAIGN_ACTIVE) {
+            [
+                'campaign-hero-badge',
+                'campaign-checklist-item',
+                'campaign-pricing-discount',
+                'campaign-pricing-label',
+                'campaign-banner'
+            ].forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+        }
+
         lucide.createIcons();
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
