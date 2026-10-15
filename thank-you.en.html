@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent! | hello World English & Programming School</title>
+    <meta name="robots" content="noindex">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #fafafa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #c0185a 0%, #8b0000 60%, #1a1a2e 100%);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+            padding: 3rem 2.5rem;
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+        }
+
+        .check-circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ef0d50, #c0185a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            animation: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        }
+
+        @keyframes pop {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #ef0d50, #c0185a);
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            padding: 0.75rem 2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: opacity 0.2s, transform 0.15s;
+            margin-top: 1.5rem;
+        }
+
+        .home-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero-gradient text-white py-5 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="font-black text-xl">hello world</span>
+        </div>
+    </header>
+
+    <main class="px-4 py-10">
+        <div class="card">
+            <div class="check-circle">
+                <i data-lucide="check" class="w-10 h-10 text-white"></i>
+            </div>
+            <h1 class="text-2xl font-black text-gray-900 mb-3">Message Sent! Thank You 🎉</h1>
+            <p class="text-gray-600 mb-2">We've received your request.</p>
+            <p class="text-gray-600">A member of our team will contact you within <strong>2 business days</strong>.</p>
+
+            <div class="mt-6 bg-yellow-50 rounded-xl p-4 text-sm text-gray-700">
+                <p class="font-bold mb-1">📌 Need a faster response?</p>
+                <p><a href="tel:08022385980" class="text-red-600 font-semibold">080-2238-5980</a> (Mon–Fri 10:00–20:00)</p>
+                <p class="mt-1"><a href="https://line.me/ti/p/Xk4yr5s9FA" class="text-green-600 font-semibold">Message us on LINE</a> (24/7)</p>
+            </div>
+
+            <a href="index.en.html" class="home-btn">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-5 text-sm text-gray-400">
+        <p>&copy; <span id="current-year">2025</span> hello world. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

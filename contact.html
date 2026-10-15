@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無料体験レッスン予約 | hello World 英語・プログラミング教室</title>
+    <meta name="description" content="hello World英語・プログラミング教室の無料体験レッスンをご予約いただけます。池田駅徒歩4分。">
+    <link rel="alternate" hreflang="ja" href="https://helloworldikeda.com/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://helloworldikeda.com/contact.en.html" />
+    <link rel="alternate" hreflang="ko" href="https://helloworldikeda.com/contact.ko.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background: #fafafa;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #c0185a 0%, #8b0000 60%, #1a1a2e 100%);
+        }
+
+        .form-card {
+            background: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.10);
+        }
+
+        .form-label {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 0.35rem;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .form-label .required {
+            color: #ef0d50;
+            margin-left: 4px;
+        }
+
+        .form-input {
+            width: 100%;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 0.65rem 1rem;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+            background: #f9fafb;
+            color: #111827;
+            font-family: inherit;
+        }
+
+        .form-input:focus {
+            border-color: #ef0d50;
+            box-shadow: 0 0 0 3px rgba(239, 13, 80, 0.12);
+            background: #fff;
+        }
+
+        .form-select {
+            width: 100%;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 0.65rem 1rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            outline: none;
+            background: #f9fafb;
+            color: #111827;
+            font-family: inherit;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23ef0d50' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            padding-right: 2.5rem;
+        }
+
+        .form-select:focus {
+            border-color: #ef0d50;
+            box-shadow: 0 0 0 3px rgba(239, 13, 80, 0.12);
+            background-color: #fff;
+        }
+
+        .form-textarea {
+            width: 100%;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 0.65rem 1rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+            outline: none;
+            background: #f9fafb;
+            color: #111827;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-textarea:focus {
+            border-color: #ef0d50;
+            box-shadow: 0 0 0 3px rgba(239, 13, 80, 0.12);
+            background: #fff;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #ef0d50, #c0185a);
+            color: #fff;
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 0.85rem 2.5rem;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s, transform 0.15s;
+            letter-spacing: 0.03em;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.92;
+            transform: translateY(-1px);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: #ef0d50;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: #374151;
+            padding: 0.3rem 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            accent-color: #ef0d50;
+            width: 1.1rem;
+            height: 1.1rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="hero-gradient text-white py-6 px-4">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="back-link text-white opacity-90 hover:opacity-100">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span>ホームへ戻る</span>
+            </a>
+            <div class="flex items-center gap-3">
+                <img src="logo.svg" alt="hello world logo" class="h-8 w-auto" onerror="this.style.display='none'">
+                <span class="font-black text-lg">hello world</span>
+            </div>
+            <div class="flex gap-3 text-sm opacity-80">
+                <a href="contact.en.html" class="hover:opacity-100">EN</a>
+                <a href="contact.ko.html" class="hover:opacity-100">한국어</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero-gradient text-white text-center py-12 px-4">
+        <div class="max-w-2xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-yellow-400 text-black font-bold text-sm px-4 py-1.5 rounded-full mb-4">
+                <i data-lucide="gift" class="w-4 h-4 text-red-500"></i>
+                無料体験レッスン受付中！
+            </div>
+            <h1 class="text-3xl md:text-4xl font-black mb-3">無料体験レッスンのご予約</h1>
+            <p style="color: #e5bace;" class="text-lg">下記フォームにご記入いただければ、担当者よりご連絡いたします。</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <main class="max-w-2xl mx-auto px-4 py-10">
+        <div class="form-card p-8 md:p-10">
+            <form name="trial-booking-ja" method="POST" data-netlify="true" action="thank-you.html"
+                netlify-honeypot="bot-field">
+                <!-- Netlify hidden fields -->
+                <input type="hidden" name="form-name" value="trial-booking-ja">
+                <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+                <div class="space-y-6">
+
+                    <!-- Name -->
+                    <div>
+                        <label class="form-label" for="name">お名前<span class="required">*</span></label>
+                        <input class="form-input" type="text" id="name" name="name"
+                            placeholder="例：山田 太郎" required autocomplete="name">
+                    </div>
+
+                    <!-- Name (furigana) -->
+                    <div>
+                        <label class="form-label" for="furigana">ふりがな</label>
+                        <input class="form-input" type="text" id="furigana" name="furigana"
+                            placeholder="例：やまだ たろう">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label class="form-label" for="email">メールアドレス<span class="required">*</span></label>
+                        <input class="form-input" type="email" id="email" name="email"
+                            placeholder="例：taro@example.com" required autocomplete="email">
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label class="form-label" for="phone">お電話番号</label>
+                        <input class="form-input" type="tel" id="phone" name="phone"
+                            placeholder="例：090-1234-5678" autocomplete="tel">
+                    </div>
+
+                    <!-- Course interest -->
+                    <div>
+                        <label class="form-label">ご興味のあるコース<span class="required">*</span></label>
+                        <div class="checkbox-group space-y-1">
+                            <label><input type="checkbox" name="course" value="英語コース"> 英語コース</label>
+                            <label><input type="checkbox" name="course" value="プログラミングコース"> プログラミングコース</label>
+                            <label><input type="checkbox" name="course" value="両方"> 両方</label>
+                        </div>
+                    </div>
+
+                    <!-- Preferred time -->
+                    <div>
+                        <label class="form-label" for="preferred-time">ご希望の曜日・時間帯</label>
+                        <select class="form-select" id="preferred-time" name="preferred-time">
+                            <option value="">-- お選びください --</option>
+                            <option value="平日午前">平日 午前（10:00〜12:00）</option>
+                            <option value="平日午後">平日 午後（13:00〜17:00）</option>
+                            <option value="平日夕方">平日 夕方（17:00〜20:00）</option>
+                            <option value="土曜">土曜日</option>
+                            <option value="日曜">日曜日</option>
+                            <option value="未定">未定・相談したい</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="form-label" for="message">ご質問・ご要望など</label>
+                        <textarea class="form-textarea" id="message" name="message"
+                            placeholder="お子さまの年齢・学年、ご質問など、何でもお気軽にどうぞ。"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        送信する　→
+                    </button>
+
+                    <p class="text-center text-xs text-gray-400 mt-2">送信後、担当者より2営業日以内にご連絡いたします。</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Alternative contact -->
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p class="mb-3 font-semibold text-gray-600">または直接ご連絡ください</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:08022385980" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition font-medium">
+                    <i data-lucide="phone" class="w-4 h-4"></i> 080-2238-5980
+                </a>
+                <a href="https://line.me/ti/p/Xk4yr5s9FA" class="flex items-center gap-1.5 text-green-600 hover:text-green-700 transition font-medium">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> LINE で予約
+                </a>
+                <a href="mailto:hello@helloworldikeda.com" class="flex items-center gap-1.5 text-gray-600 hover:text-red-600 transition font-medium">
+                    <i data-lucide="mail" class="w-4 h-4"></i> hello@helloworldikeda.com
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-6 text-sm text-gray-400 mt-8">
+        <p>&copy; <span id="current-year">2025</span> hello world. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
