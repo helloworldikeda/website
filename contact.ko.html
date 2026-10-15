@@ -21,7 +21,7 @@
         }
 
         .hero-gradient {
-            background: linear-gradient(135deg, #c0185a 0%, #8b0000 60%, #1a1a2e 100%);
+            background: linear-gradient(135deg, #ef0d50 0%, #c0185a 100%);
         }
 
         .form-card {
@@ -150,34 +150,35 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="hero-gradient text-white py-6 px-4">
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-gray-100 py-3.5 px-4 sticky top-0 z-50 shadow-xs">
         <div class="max-w-4xl mx-auto flex items-center justify-between">
             <a href="index.ko.html"
-                class="inline-flex items-center gap-2 text-white opacity-90 hover:opacity-100 font-bold no-underline">
-                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                class="flex items-center gap-1.5 text-gray-600 hover:text-gray-900 font-semibold text-sm transition">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
                 <span>홈으로 돌아가기</span>
             </a>
-            <div class="flex items-center gap-3">
-                <img src="logo.svg" alt="hello world logo" class="h-8 w-auto" onerror="this.style.display='none'">
-            </div>
-            <div class="flex gap-3 text-sm opacity-80">
-                <a href="contact.html" class="hover:opacity-100">日本語</a>
-                <a href="contact.en.html" class="hover:opacity-100">EN</a>
+            <a href="index.ko.html" class="flex items-center">
+                <img src="logo.svg" alt="hello world" class="h-7 sm:h-8 w-auto">
+            </a>
+            <div class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-gray-500">
+                <a href="contact.html" class="px-2 py-1 rounded hover:bg-gray-100 hover:text-gray-900 transition">日本語</a>
+                <span class="text-gray-300">|</span>
+                <a href="contact.en.html" class="px-2 py-1 rounded hover:bg-gray-100 hover:text-gray-900 transition">EN</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <div class="hero-gradient text-white text-center py-12 px-4">
+    <!-- Hero Banner -->
+    <div class="hero-gradient text-white text-center py-10 md:py-12 px-4">
         <div class="max-w-2xl mx-auto">
             <div
-                class="inline-flex items-center gap-2 bg-yellow-400 text-black font-bold text-sm px-4 py-1.5 rounded-full mb-4">
-                <i data-lucide="gift" class="w-4 h-4 text-red-500"></i>
+                class="inline-flex items-center gap-2 bg-yellow-400 text-black font-bold text-sm px-4 py-1.5 rounded-full mb-4 shadow-sm">
+                <i data-lucide="gift" class="w-4 h-4 text-red-600"></i>
                 무료 체험 레슨 접수 중!
             </div>
             <h1 class="text-3xl md:text-4xl font-black mb-3">무료 체험 레슨 예약</h1>
-            <p style="color: #e5bace;" class="text-lg">아래 양식을 작성해 주시면 담당자가 2영업일 이내에 연락드립니다.</p>
+            <p class="text-white/90 text-base md:text-lg">아래 양식을 작성해 주시면 담당자가 2영업일 이내에 연락드립니다.</p>
         </div>
     </div>
 
